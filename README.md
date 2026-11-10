@@ -1,6 +1,6 @@
-# Ruci BSC Professional
+# BSC Hotel
 
-Aplikasi **Balanced Scorecard multi-perusahaan** berbasis Laravel + MySQL, dikembangkan dari edisi DHASTRAM (ARAH GPCH).
+Edisi hotel dari **Ruci BSC Professional**: aplikasi **Balanced Scorecard multi-perusahaan** berbasis Laravel + MySQL, dikembangkan dari edisi DHASTRAM (ARAH GPCH). KPI bawaannya diturunkan dari laporan akhir bulan 10 departemen hotel (Finance, Rooms Division, Sales & Marketing, Housekeeping, F&B Service, Kitchen, Engineering, Security, Purchasing, HR) untuk persiapan tahun anggaran 2027.
 Satu instalasi melayani banyak perusahaan; setiap perusahaan punya data, perioda, admin dan pengguna sendiri, dan datanya bisa diupload satu per satu lewat file Excel.
 
 **Instalasi di Laragon → [PANDUAN-LARAGON.md](PANDUAN-LARAGON.md)** · **Instalasi di cPanel → [PANDUAN-CPANEL.md](PANDUAN-CPANEL.md)**
@@ -50,33 +50,20 @@ Skor KPI: polaritas naik = realisasi ÷ target × 100, turun = target ÷ realisa
 
 ## Data contoh
 
-Di luar produksi (atau bila `RUCI_SEED_DEMO=true`) seeder memuat enam belas perusahaan contoh:
+Di luar produksi (atau bila `RUCI_SEED_DEMO=true`) seeder memuat tiga hotel contoh. Setiap hotel punya perioda **2025** (ditutup), **2026** (berjalan: realisasi Jan–Agu disetujui, Sep dalam proses) dan **2027** (perencanaan: target & inisiatif saja), dengan 4 tema strategis, 16 sasaran, 27 relasi sebab-akibat, dan **53 KPI dari 10 departemen hotel** (hunian, ADR, RevPAR, GOP, F&B cost, kepuasan tamu, waktu siap kamar, kWh & air per malam kamar, turnover, dsb.), plus lingkungan (PESTEL, Porter, segmen pasar, pesaing STR, regulasi, pemangku kepentingan), jati diri, inisiatif dengan aktivitas/milestone/anggaran, temuan & tindakan korektif, tinjauan kinerja, kesinambungan, dan kematangan.
 
-| Kode | Perusahaan | Isi |
+| Kode | Hotel | Sumber angka 2025 |
 |---|---|---|
-| DFI | PT Diamond Food Indonesia Tbk | Demo lengkap: perioda 2025 (ditutup, angka tahunan dari Laporan Tahunan 2025) dan 2026 (berjalan, simulasi Jan–Sep). Peta strategi 4 tema, 15 sasaran, 39 KPI, 15 inisiatif, ekosistem, tinjauan, temuan, kematangan |
-| HMN | PT Medikaloka Hermina Tbk | Demo lengkap jaringan rumah sakit: perioda 2025 (angka tahunan dari Laporan Tahunan 2025) dan 2026 (simulasi Jan–Sep). Peta strategi 4 tema, 16 sasaran, 45 KPI termasuk indikator mutu Kemenkes (INM), KRIS, klaim JKN, dokter spesialis |
-| MEDC | PT Medco Energi Internasional Tbk | Demo lengkap energi (migas, listrik, tambang tembaga-emas): 2025 dan 2026, 15 sasaran, 44 KPI dalam US$ juta, mboepd, GWh, TRIR |
-| PWON | PT Pakuwon Jati Tbk | Demo lengkap properti (mal, perkantoran, hotel, pengembangan): 2025 dan 2026, 15 sasaran, 44 KPI termasuk recurring income, okupansi, marketing sales |
-| KAEF | PT Kimia Farma Tbk | Demo lengkap farmasi dalam masa penyehatan (produksi, distribusi, apotek, klinik, lab): 2025 dan 2026, 14 sasaran, 37 KPI termasuk restrukturisasi utang |
-| SMGR | PT Semen Indonesia (Persero) Tbk | Demo lengkap semen & bahan bangunan: 2025 dan 2026, 14 sasaran, 39 KPI termasuk utilisasi, biaya energi, emisi CO₂ per ton |
-| MAPI | PT Mitra Adiperkasa Tbk | Demo lengkap ritel gaya hidup (aktif, fashion, F&B, digital): 2025 dan 2026, 14 sasaran, 35 KPI termasuk SSSG, hari persediaan, omnichannel |
-| GOTO | PT GoTo Gojek Tokopedia Tbk | Demo lengkap ekosistem digital (on-demand, e-commerce, fintech): 2025 dan 2026, 14 sasaran, 36 KPI termasuk GTV, EBITDA disesuaikan, keandalan |
-| ASII | PT Astra International Tbk | Demo lengkap konglomerasi tujuh segmen: 2025 dan 2026, 14 sasaran, 38 KPI termasuk pangsa pasar mobil, alat berat, replanting sawit |
-| BBCA | PT Bank Central Asia Tbk | Demo lengkap perbankan: 2025 dan 2026, 14 sasaran, 39 KPI termasuk CASA, NIM, LAR, transaksi digital |
-| TLKM | PT Telkom Indonesia (Persero) Tbk | Demo lengkap telekomunikasi: 2025 dan 2026, 14 sasaran, 33 KPI termasuk FMC, data center, EBITDA margin |
-| BIRD | PT Blue Bird Tbk | Demo lengkap transportasi darat (taksi, limosin, bus): 2025 dan 2026, 14 sasaran, 37 KPI termasuk utilisasi armada, armada listrik, keselamatan |
-| BTPN | PT Bank SMBC Indonesia Tbk | Demo lengkap bank universal & induk konglomerasi (Jenius, BTPN Syariah, OTO, SOF): 2025 dan 2026, 14 sasaran, 37 KPI termasuk cost of credit, NPF Grup OTO, CASA |
-| BMTP | PT Bank Mandiri Taspen | Demo lengkap bank pensiunan & UMKM (Bank Mantap): 2025 dan 2026 dengan target dari RBB, 14 sasaran, 36 KPI termasuk kredit pensiun, CASA, NPL mikro |
-| NLP | PT Nusantara Logistik Prima (fiktif) | Perioda 2026 (Jan–Agu disetujui, Sep draf) + 2027 perencanaan |
-| KSB | Klinik Sehat Bersama (fiktif) | Perioda 2026 |
+| GPCH | Grand Pasundan Convention Hotel (164 kamar) | Proyeksi manajemen (laporan mingguan GM & anggaran 2026), sudah disamarkan; bukan laporan tahunan |
+| SHID | PT Hotel Sahid Jaya International Tbk — Grand Sahid Jaya Jakarta (751 kamar) | Laporan Tahunan 2025: pendapatan Rp124,0 M, hunian 30,00%, ADR Rp780.112, target 2026 Rp165,6 M |
+| SNLK | PT Sunter Lakeside Hotel Tbk — Sunlake Hotel Jakarta Utara (228 kamar) | Laporan Tahunan 2025: pendapatan Rp46,0 M, 45.855 malam kamar, target 2026 Rp53,2 M |
 
-Akun: Super Admin `admin@rucibsc.local` / `Ruci@BSC2026` (ubah lewat `RUCI_ADMIN_PASSWORD`). Akun contoh per perusahaan, kata sandi `Contoh-2026!`:
-`dfi.admin@contoh.local`, `dfi.direktur@…`, `dfi.keuangan@…`, `dfi.komersial@…`, `dfi.rantaipasok@…`, `dfi.produksi@…`, `dfi.sdm@…`, `dfi.ti@…`, `dfi.strategi@…`, `dfi.komisaris@…`, `dfi.analis@…`; untuk Hermina `hmn.admin`, `hmn.direktur`, `hmn.keuangan`, `hmn.medis`, `hmn.operasional`, `hmn.pemasaran`, `hmn.pengembangan`, `hmn.sdm`, `hmn.ti`, `hmn.strategi`, `hmn.komisaris`, `hmn.analis` (@contoh.local); pola serupa untuk `medc.*`, `pwon.*`, `kaef.*`, `smgr.*`, `mapi.*`, `goto.*`, `asii.*`, `bbca.*`, `tlkm.*`, `bird.*`, `btpn.*`, `bmtp.*`, `nlp.*`, dan `ksb.*`.
+Akun: Super Admin `admin@rucibsc.local` / `Ruci@BSC2026` (ubah lewat `RUCI_ADMIN_PASSWORD`). Akun contoh per hotel, kata sandi `Contoh-2026!`:
+`gpch.admin`, `gpch.gm`, `gpch.keuangan`, `gpch.strategi`, `gpch.pengawas`, `gpch.pemilik`, `gpch.kamar`, `gpch.hk`, `gpch.fnb`, `gpch.chef`, `gpch.sales`, `gpch.engineering`, `gpch.hr`, `gpch.security`, `gpch.purchasing`, `gpch.analis` (@contoh.local); pola yang sama untuk `shid.*` dan `snlk.*`.
 
-**Peringatan data demo.** Semua data contoh adalah DATA DEMO untuk pembelajaran. Untuk DFI, HMN, MEDC, PWON, KAEF, SMGR, MAPI, GOTO, ASII, BBCA, TLKM, BIRD, BTPN, dan BMTP, angka 2025 secara garis besar mengacu pada Laporan Tahunan 2025 perusahaan terkait (kolom `companies.demo_source`); target, rincian bulanan, data 2026, dan sebagian indikator adalah simulasi. Peringatan ini tampil sebagai pita di setiap halaman perusahaan demo (`App\Support\DemoNotice`), di halaman login, dan di sheet Petunjuk template Excel.
+**Peringatan data demo.** Semua data contoh adalah DATA DEMO untuk pembelajaran dan penjelasan kepada manajemen. Untuk SHID dan SNLK, angka 2025 secara garis besar mengacu pada Laporan Tahunan 2025 (kolom `companies.demo_source`); untuk GPCH angka adalah proyeksi. KPI operasional, rincian bulanan, data 2026 dan 2027 adalah simulasi. Peringatan ini tampil sebagai pita di setiap halaman hotel demo (`App\Support\DemoNotice`), di halaman login, dan di sheet Petunjuk template Excel.
 
-Memuat satu demo di server yang sudah berjalan: `php artisan rucibsc:demo DFI|HMN|MEDC|PWON|KAEF|SMGR|MAPI|GOTO|ASII|BBCA|TLKM|BIRD|BTPN|BMTP` (Diamond Food, Hermina, Medco, Pakuwon, Kimia Farma, Semen Indonesia, MAP, GoTo, Astra, BCA, Telkom, Blue Bird, SMBC Indonesia, Mandiri Taspen). Kata sandi akun contoh dibuat acak dan ditampilkan (atau tentukan dengan `--password=`). Bila perusahaan itu sudah punya perioda 2025/2026, tambahkan `--reset` untuk menggantinya. Nama lama `rucibsc:demo-diamond` tetap bisa dipakai.
+Memuat satu demo di server yang sudah berjalan: `php artisan rucibsc:demo GPCH|SHID|SNLK` (alias `bschotel:demo`). Kata sandi akun contoh dibuat acak dan ditampilkan (atau tentukan dengan `--password=`). Bila hotel itu sudah punya perioda 2025/2026/2027, tambahkan `--reset` untuk menggantinya.
 
 Situs demo/promosi: `RUCI_GUEST_LOGIN=true` menampilkan tombol **Masuk sebagai Tamu (lihat-lihat)** di halaman login (rute `/masuk-tamu`, menerima `?perusahaan=KODE` untuk membuka perusahaan contoh pada tahun berjalan dan `?ke=kenali|panduan|implementasi|workshop`). Rute `/` menjadi halaman depan promosi (`LandingController`, `resources/views/landing.blade.php`, `public/css/landing.css`) dengan daftar data demo dari `App\Support\DemoCatalog`; bila akses Tamu mati, `/` diarahkan ke `/admin`. Akun Tamu (peran `tamu`, global) hanya punya izin lihat tanpa log audit dan ekspor, konteksnya disimpan per sesi, dan `App\Support\GuestMode` menolak setiap penyimpanan/penghapusan model oleh Tamu sebagai pengaman terakhir.
 
@@ -91,8 +78,8 @@ Sebelum dipakai sungguhan: `php artisan rucibsc:hapus-contoh` menghapus semua pe
 | `php artisan dhastram:doctor` | Cek PHP, ekstensi, database, izin, peran, data contoh |
 | `php artisan dhastram:create-admin` | Membuat Super Admin baru |
 | `php artisan db:seed --class=DhastramRolePermissionSeeder` | Memperbarui izin & peran (aman diulang) |
-| `php artisan rucibsc:demo DFI\|HMN\|MEDC\|PWON\|KAEF\|SMGR\|MAPI\|GOTO\|ASII\|BBCA\|TLKM\|BIRD\|BTPN\|BMTP [--reset]` | Memuat satu demo lengkap (2025 + 2026) |
-| `php artisan rucibsc:hapus-contoh` | Menghapus perusahaan & akun contoh |
+| `php artisan rucibsc:demo GPCH\|SHID\|SNLK [--reset]` | Memuat satu demo hotel lengkap (2025, 2026, 2027) |
+| `php artisan rucibsc:hapus-contoh` | Menghapus hotel & akun contoh |
 | `php artisan rucibsc:reminders --date=2026-11-03` | Uji pengingat |
 | `php vendor/bin/phpunit` | Menjalankan test otomatis |
 

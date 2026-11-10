@@ -59,9 +59,9 @@ Buka **http://ruci-bsc.test/admin**
 | Akun | Email | Kata sandi |
 |---|---|---|
 | Super Admin | `admin@rucibsc.local` | `Ruci@BSC2026` (atau nilai `RUCI_ADMIN_PASSWORD`) |
-| Admin Diamond Food (contoh) | `dfi.admin@contoh.local` | `Contoh-2026!` |
-| Direktur Diamond Food (contoh) | `dfi.direktur@contoh.local` | `Contoh-2026!` |
-| Admin NLP / KSB (fiktif) | `nlp.admin@contoh.local`, `ksb.admin@contoh.local` | `Contoh-2026!` |
+| Admin GPCH (contoh) | `gpch.admin@contoh.local` | `Contoh-2026!` |
+| General Manager GPCH (contoh) | `gpch.gm@contoh.local` | `Contoh-2026!` |
+| Admin Sahid / Sunter Lakeside (contoh) | `shid.admin@contoh.local`, `snlk.admin@contoh.local` | `Contoh-2026!` |
 
 Daftar lengkap akun contoh ada di README.md. Kata sandi baru minimal 10 karakter, mengandung huruf dan angka. Login dibatasi 5 percobaan per menit.
 

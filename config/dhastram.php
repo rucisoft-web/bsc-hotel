@@ -9,8 +9,8 @@ return [
     | DHASTRAM_TERMS=dharma -> istilah asli DHASTRAM (Brahman, Atman, ...)
     */
     'terms' => env('DHASTRAM_TERMS', 'umum'),
-    'brand_name' => env('DHASTRAM_BRAND_NAME', 'Ruci BSC Professional'),
-    'brand_tagline' => env('DHASTRAM_BRAND_TAGLINE', 'Balanced Scorecard Multi-Perusahaan'),
+    'brand_name' => env('DHASTRAM_BRAND_NAME', 'BSC Hotel'),
+    'brand_tagline' => env('DHASTRAM_BRAND_TAGLINE', 'Balanced Scorecard Hotel — berbasis Ruci BSC'),
 
     // Dibaca lewat config() supaya tetap berlaku setelah `php artisan optimize` (config cache) di produksi
     'notify_mail' => (bool) env('ARAH_NOTIFY_MAIL', false),

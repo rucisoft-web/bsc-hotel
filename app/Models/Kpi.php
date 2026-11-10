@@ -16,7 +16,7 @@ class Kpi extends Model
 
     protected static ?string $sequencePrefix = 'KPI';
 
-    public const UNITS = ['Rp miliar' => 'Rp miliar', 'Rp juta' => 'Rp juta', 'Rp ribu' => 'Rp ribu', 'US$ juta' => 'US$ juta', 'US$/boe' => 'US$/boe', '%' => '%', 'indeks' => 'Indeks', 'skor' => 'Skor', 'kasus' => 'Kasus', 'event' => 'Event', 'unit' => 'Unit', 'hari' => 'Hari', 'jam' => 'Jam', 'menit' => 'Menit', 'rasio' => 'Rasio', 'kali' => 'Kali (x)', 'orang' => 'Orang', 'ribu' => 'Ribu', 'juta' => 'Juta', 'ribu ton' => 'Ribu ton', 'ribu unit' => 'Ribu unit', 'mboepd' => 'mboepd', 'mmboe' => 'mmboe', 'GWh' => 'GWh', 'MWh' => 'MWh', 'kg CO₂e/ton' => 'kg CO₂e/ton', 'MW' => 'MW', 'tahun' => 'Tahun', 'm²' => 'm²', 'km' => 'km', 'ha' => 'ha'];
+    public const UNITS = ['Rp miliar' => 'Rp miliar', 'Rp juta' => 'Rp juta', 'Rp ribu' => 'Rp ribu', 'US$ juta' => 'US$ juta', 'US$/boe' => 'US$/boe', '%' => '%', 'indeks' => 'Indeks', 'skor' => 'Skor', 'kasus' => 'Kasus', 'event' => 'Event', 'unit' => 'Unit', 'hari' => 'Hari', 'jam' => 'Jam', 'menit' => 'Menit', 'rasio' => 'Rasio', 'kali' => 'Kali (x)', 'orang' => 'Orang', 'ribu' => 'Ribu', 'juta' => 'Juta', 'ribu ton' => 'Ribu ton', 'ribu unit' => 'Ribu unit', 'mboepd' => 'mboepd', 'mmboe' => 'mmboe', 'GWh' => 'GWh', 'MWh' => 'MWh', 'kg CO₂e/ton' => 'kg CO₂e/ton', 'MW' => 'MW', 'tahun' => 'Tahun', 'm²' => 'm²', 'km' => 'km', 'malam kamar' => 'Malam kamar', 'kamar' => 'Kamar', 'cover' => 'Cover', 'kWh' => 'kWh', 'm³' => 'm³', 'ha' => 'ha'];
 
     public const FREQUENCIES = ['bulanan' => 'Bulanan', 'mingguan' => 'Mingguan', 'kuartalan' => 'Kuartalan', 'semesteran' => 'Semesteran', 'tahunan' => 'Tahunan'];
 

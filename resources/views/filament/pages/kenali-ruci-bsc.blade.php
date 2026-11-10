@@ -1,5 +1,5 @@
 @php
-    $img = fn (string $n) => asset('images/kenali/'.$n.'.jpg').'?v=1';
+    $img = fn (string $n) => asset('images/kenali/'.$n.'.jpg').'?v=2';
     $p = $perspectives;
 
     // Diagram peta strategi: 4 lapis perspektif, panah sebab-akibat dari bawah ke atas
@@ -35,7 +35,7 @@
             </div>
         </div>
         <a class="kenali-shot kenali-hero-shot" href="{{ $img('peta-strategi') }}" target="_blank" rel="noopener">
-            <img src="{{ $img('peta-strategi') }}" alt="Peta Strategi Hermina di Ruci BSC" loading="eager">
+            <img src="{{ $img('peta-strategi') }}" alt="Peta Strategi Grand Pasundan Convention Hotel di BSC Hotel" loading="eager">
         </a>
     </section>
 
@@ -190,7 +190,7 @@
     {{-- ===== Tangkapan layar ===== --}}
     <section class="kenali-section" id="lihat-langsung">
         <h2>Lihat langsung</h2>
-        <p class="kenali-lead">Tampilan berikut diambil dari data demo PT Medikaloka Hermina Tbk dan PT Diamond Food Indonesia Tbk yang tersedia di situs ini. Klik gambar untuk memperbesar.</p>
+        <p class="kenali-lead">Tampilan berikut diambil dari data demo hotel yang tersedia di situs ini: Grand Pasundan Convention Hotel, Hotel Sahid Jaya, dan Sunter Lakeside Hotel. Klik gambar untuk memperbesar.</p>
         <div class="kenali-gallery">
             @foreach ([
                 ['pusat-kendali', 'Pusat Kendali Eksekutif', 'Skor strategis, status semua KPI, inisiatif terlambat, dan temuan terbuka dalam satu layar. Bahan utama rapat Direksi.'],

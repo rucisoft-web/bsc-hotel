@@ -48,6 +48,6 @@
         </section>
     @endforeach
 
-    <div class="arah-muted panduan-foot">Tangkapan layar diambil dari data demo PT Diamond Food Indonesia Tbk dan PT Medikaloka Hermina Tbk (disusun untuk pembelajaran, mengacu secara garis besar pada laporan tahunan; bukan data resmi perusahaan). Menu yang terlihat bisa berbeda sesuai hak akses peran Anda.</div>
+    <div class="arah-muted panduan-foot">Sebagian tangkapan layar diambil dari edisi umum Ruci BSC dengan data demo non-hotel; alurnya sama persis di BSC Hotel. Data demo hotel (GPCH, Sahid, Sunter Lakeside) disusun untuk pembelajaran, bukan data resmi perusahaan. Menu yang terlihat bisa berbeda sesuai hak akses peran Anda.</div>
 </div>
 </x-filament-panels::page>

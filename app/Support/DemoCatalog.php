@@ -6,25 +6,14 @@ use App\Models\AnalysisPeriod;
 use App\Models\Company;
 use Illuminate\Support\Facades\DB;
 
-/** Daftar perusahaan contoh (studi kasus) yang dipakai di halaman depan, login, dan Kenali Ruci BSC. */
+/** Daftar perusahaan contoh (studi kasus) yang dipakai di halaman depan, login, dan Kenali BSC Hotel. */
 class DemoCatalog
 {
     /** [kode, nama, sektor, pelajaran utama] */
     public const CASES = [
-        ['DFI', 'Diamond Food Indonesia', 'Makanan & minuman', 'Pertumbuhan merek, distribusi, dan efisiensi rantai dingin.'],
-        ['HMN', 'Medikaloka Hermina', 'Jaringan rumah sakit', 'Ekspansi kapasitas vs. utilisasi, mutu klinis, dan kepatuhan KRIS.'],
-        ['MEDC', 'Medco Energi Internasional', 'Energi & sumber daya alam', 'Nilai, fokus, pertumbuhan: biaya rendah, deleveraging, akuisisi, dan transisi energi.'],
-        ['PWON', 'Pakuwon Jati', 'Properti & superblok', 'Pendapatan berulang ±79% vs. siklus residensial dan perkantoran yang melemah.'],
-        ['KAEF', 'Kimia Farma', 'Farmasi terintegrasi (BUMN)', 'Strategi pemulihan: rugi menyempit, restrukturisasi utang, likuiditas dan utilisasi pabrik.'],
-        ['SMGR', 'Semen Indonesia', 'Semen & bahan bangunan (BUMN)', 'Kelebihan pasokan: margin di bawah tekanan, efisiensi energi, dekarbonisasi, dan ekspor.'],
-        ['MAPI', 'Mitra Adiperkasa', 'Ritel gaya hidup', 'Ekspansi gerai vs. produktivitas, persediaan, omnichannel, dan unit F&B yang merugi.'],
-        ['GOTO', 'GoTo Gojek Tokopedia', 'Ekosistem digital', 'Menuju laba berkelanjutan: EBITDA disesuaikan, fintech, keandalan layanan.'],
-        ['ASII', 'Astra International', 'Konglomerasi multisektor', 'Portofolio tujuh segmen: otomotif, jasa keuangan, alat berat, agribisnis, dan alokasi modal.'],
-        ['BBCA', 'Bank Central Asia', 'Perbankan', 'Franchise dana murah (CASA), kualitas kredit, digital banking, dan risiko siber.'],
-        ['TLKM', 'Telkom Indonesia', 'Telekomunikasi (BUMN)', 'Transformasi digital: seluler, IndiHome/FMC, data center, dan efisiensi biaya.'],
-        ['BIRD', 'Blue Bird', 'Transportasi darat', 'Pemulihan armada, persaingan aplikasi, elektrifikasi armada, dan keselamatan.'],
-        ['BTPN', 'SMBC Indonesia', 'Perbankan & konglomerasi keuangan', 'Pendapatan naik, laba anjlok karena biaya kredit anak usaha: strategi pemulihan kualitas aset.'],
-        ['BMTP', 'Bank Mandiri Taspen', 'Perbankan pensiunan & UMKM', 'Bank sangat sehat yang bergantung pada satu segmen: diversifikasi yang hati-hati dan dana murah.'],
+        ['GPCH', 'Grand Pasundan Convention Hotel', 'Hotel & konvensi (164 kamar)', 'Pemulihan pendapatan banquet & F&B, disiplin biaya, dan persiapan RKAP 2027 berbasis 10 departemen.'],
+        ['SHID', 'Hotel Sahid Jaya International', 'Hotel bintang 5 Jakarta (751 kamar)', 'Hunian 30% setelah efisiensi anggaran pemerintah: renovasi aset, diversifikasi segmen, Program 4 Pilar SahidTANGGUH.'],
+        ['SNLK', 'Sunter Lakeside Hotel', 'Family hotel & MICE (228 kamar)', 'Hunian stabil tetapi pendapatan turun: segmen keluarga, wedding, biaya tenaga kerja, dan piutang.'],
     ];
 
     /** Perioda pembuka sebuah perusahaan: tahun berjalan (aktif) lebih dulu, lalu tahun terbaru. */

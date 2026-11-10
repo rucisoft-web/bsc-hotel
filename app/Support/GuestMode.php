@@ -72,10 +72,10 @@ class GuestMode
         return $user;
     }
 
-    /** Perusahaan pembuka untuk Tamu: contoh pertama (DFI bila ada). */
+    /** Perusahaan pembuka untuk Tamu: contoh pertama (GPCH bila ada). */
     public static function startCompany(): ?Company
     {
-        return Company::where('code', 'DFI')->first()
+        return Company::where('code', 'GPCH')->first()
             ?? Company::where('is_demo', true)->orderBy('id')->first()
             ?? Company::orderBy('id')->first();
     }

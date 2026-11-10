@@ -47,7 +47,7 @@
                 'PESTEL, kekuatan industri, segmen pasar, pesaing, dan regulasi.',
                 'SWOT berbobot: memilih faktor yang benar-benar menentukan.',
                 'Strategi TOWS (SO, ST, WO, WT) sampai isu strategis.',
-            ], 'Kelompok mengisi SWOT untuk organisasi sendiri atau salah satu studi kasus (Diamond Food, Hermina, Medco, Pakuwon, Kimia Farma, Semen Indonesia, MAP, GoTo, Astra, BCA, Telkom, Blue Bird, SMBC Indonesia, Mandiri Taspen).', [['SWOT', url('/admin/swot-items')], ['TOWS', url('/admin/tows-strategies')]]],
+            ], 'Kelompok mengisi SWOT untuk organisasi sendiri atau salah satu studi kasus hotel (GPCH, Sahid, Sunter Lakeside).', [['SWOT', url('/admin/swot-items')], ['TOWS', url('/admin/tows-strategies')]]],
             ['3', 'Jati diri & tema strategis', '90 menit', [
                 'Visi, misi, nilai inti, dan kapabilitas yang membedakan.',
                 'Dari isu strategis ke 3–5 tema strategis yang mudah diingat.',
@@ -56,7 +56,7 @@
             ['4', 'Menyusun Peta Strategi', '90 menit', [
                 'Sasaran yang baik: kata kerja + hasil, satu gagasan per sasaran.',
                 'Menyusun dari bawah (SDM) ke atas (Keuangan), lalu menarik panah sebab-akibat.',
-                'Contoh: Peta Strategi Hermina, Medco, Pakuwon, dan Kimia Farma (pemulihan) — data demo.',
+                'Contoh: Peta Strategi GPCH, Hotel Sahid Jaya, dan Sunter Lakeside Hotel — data demo.',
             ], 'Menyusun 8–12 sasaran di kertas plano dengan kartu tempel, lalu galeri antarkelompok.', [['Peta Strategi', Pages\PetaStrategi::getUrl()]]],
         ],
         '2' => [

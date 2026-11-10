@@ -194,6 +194,12 @@ abstract class ShowcaseSeeder
 
     // ------------------------------------------------------------------ KPI
 
+    /** Faktor realisasi ÷ target per bulan 2026; bawaan konstan, bisa diberi tren per bulan. */
+    protected function actualFactor2026(string $code, string $dir, float $f26, int $month): float
+    {
+        return $f26;
+    }
+
     /** @return array<string,Kpi> */
     protected function kpis(int $year, array $obj): array
     {
@@ -215,7 +221,7 @@ abstract class ShowcaseSeeder
                 $actuals = [];
                 foreach ($targets as $m => $t) {
                     if ($m <= 9) {
-                        $v = $t * $f26 * (1 + mt_rand(-150, 150) / 10000);
+                        $v = $t * $this->actualFactor2026($code, $dir, $f26, $m) * (1 + mt_rand(-150, 150) / 10000);
                         $actuals[$m] = round($unit === '%' && $t <= 100 ? min($v, 100) : $v, $dec);
                     }
                 }

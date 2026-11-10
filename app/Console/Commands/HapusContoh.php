@@ -11,7 +11,7 @@ class HapusContoh extends Command
 {
     protected $signature = 'rucibsc:hapus-contoh {--force : Lewati konfirmasi}';
 
-    protected $description = 'Hapus perusahaan contoh (Diamond Food, Hermina, Medco, Pakuwon, Kimia Farma, Semen Indonesia, MAP, GoTo, Astra, BCA, Telkom, Blue Bird, SMBC Indonesia, Mandiri Taspen, NLP, KSB) dan akun contoh sebelum dipakai produksi';
+    protected $description = 'Hapus hotel contoh (GPCH, Sahid, Sunter Lakeside) dan akun contoh sebelum dipakai produksi';
 
     public function handle(): int
     {
